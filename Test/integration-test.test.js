@@ -10,7 +10,7 @@ describe('Test e2e', () => {
         chai.request(app)
             .get('/')
             .end((err, res) => {
-                chai.assert.equal(res.text, 'Hello World')
+                chai.assert.equal(res.text, 'Hello World!')
                 done();
             });
     });
